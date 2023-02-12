@@ -4,13 +4,20 @@
 
 Launch
 ------
-
+#
+SET YOUR OWN ABSOLUTE PATH 
 ```
 git clone https://github.com/BenitoSwaggolini/Leetcode-daily-task-auto-folder.git
 python -m venv venv
 .\venv\Scripts\activate
 cd Leetcode-daily-task-auto-folder
 pip install -r requirements.txt
+```
+
+Set your own absolute path in 'main.py'
+
+Then launch this command
+```
 pyinstaller --onefile main.py -w 
 ```
 ##

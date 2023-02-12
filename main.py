@@ -80,5 +80,7 @@ def create_folder_and_files(absolute_path: str, data: dict):
 
 
 if __name__ == '__main__':
-    url = "https://leetcode.com/problemset/all/"
-    create_folder_and_files(absolute_path, get_data_about_task(get_html(url)))
+    while True:
+        url = "https://leetcode.com/problemset/all/"
+        create_folder_and_files(absolute_path, get_data_about_task(get_html(url)))
+        time.sleep(60 * 60 * 12)
